@@ -35,3 +35,8 @@ obj/
 *.sln
 *.sw?
 .env
+
+# Saídas de build geradas
+backend/config/
+*.tsbuildinfo
+vite.config.ts.timestamp-*

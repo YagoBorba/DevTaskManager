@@ -12,12 +12,15 @@
 
 <div align="center">
 
+[![CI Status][ci-shield]][ci-link]
 [![Project Type][type-shield]][type-link]
 [![.NET][dotnet-shield]][dotnet-link]
 [![Vite][vite-shield]][vite-link]
 
 </div>
 
+[ci-shield]: https://github.com/YagoBorba/DevTaskManager/actions/workflows/ci.yml/badge.svg?branch=main
+[ci-link]: https://github.com/YagoBorba/DevTaskManager/actions/workflows/ci.yml
 [type-shield]: https://img.shields.io/badge/Project-Chrome%20Extension%20%2B%20API-0A66C2?style=flat-square&labelColor=black
 [type-link]: https://github.com/YagoBorba/DevTaskManager
 [dotnet-shield]: https://img.shields.io/badge/.NET-8.0-512BD4?style=flat-square&logo=dotnet&labelColor=black
@@ -90,7 +93,9 @@ npm install
 dotnet restore backend/DevTaskManager.csproj
 ```
 
-### 4. Apply database migrations
+### 4. Apply database migrations (optional)
+
+The API applies pending migrations on startup and creates `devtaskmanager.db` in the working directory. To apply them manually:
 
 ```bash
 dotnet ef database update --project backend/DevTaskManager.csproj
@@ -184,7 +189,7 @@ Contributions are welcome.
 
 ## 📝 License
 
-No `LICENSE` file is currently present in this repository. If you want, you can add one (for example, MIT) to define usage terms explicitly.
+Distributed under the [MIT License](LICENSE).
 
 ## 📬 Contact
 
