@@ -42,6 +42,12 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Creates or updates the SQLite database on startup, so a fresh clone runs without a manual migration step.
+using (var scope = app.Services.CreateScope())
+{
+    scope.ServiceProvider.GetRequiredService<AppDbContext>().Database.Migrate();
+}
+
 
 if (app.Environment.IsDevelopment())
 {
