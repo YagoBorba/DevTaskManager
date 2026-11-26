@@ -70,7 +70,7 @@ const App: React.FC = () => {
     return (
       <div className="flex flex-col min-h-screen bg-fixed-bg">
         <Header toggleMobileMenu={toggleMobileMenu} />
-        <MobileMenu isVisible={mobileMenuVisible} />
+        <MobileMenu isVisible={mobileMenuVisible} onNavigate={() => setMobileMenuVisible(false)} />
         <main className="flex-1 p-6">
           <div className="flex gap-6">
             {/* sidebar */}
@@ -84,7 +84,7 @@ const App: React.FC = () => {
             />
   
             {/* task */}
-            <div className="flex-1 bg-surface rounded-lg shadow-lg p-4 flex flex-col">
+            <div id="tasks" className="flex-1 bg-surface rounded-lg shadow-lg p-4 flex flex-col">
               <div className="flex items-center justify-between border-b pb-3 mb-4">
                 <h2 className="text-lg font-bold text-textPrimary">Tarefas</h2>
                 {selectedProject && (

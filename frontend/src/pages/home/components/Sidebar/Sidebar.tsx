@@ -22,7 +22,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   onDeleteProject,
 }) => {
   return (
-    <aside className="w-64 bg-surface border-r border-gray-200 rounded-lg shadow-md">
+    <aside id="projects" className="w-64 bg-surface border-r border-gray-200 rounded-lg shadow-md">
       <div className="px-6 py-6">
         <div className="flex items-center justify-between border-b pb-3 mb-4">
           <h2 className="text-lg font-bold text-textPrimary">Projetos</h2>
