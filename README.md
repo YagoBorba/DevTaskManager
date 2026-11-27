@@ -63,7 +63,7 @@ The project combines a Chrome extension frontend (React + Vite + CRXJS) with a .
 - **[SQLite](https://www.sqlite.org/index.html):** Lightweight local database.
 - **[React 18](https://react.dev/):** Frontend UI components.
 - **[Vite](https://vitejs.dev/):** Build tooling and development server.
-- **[@crxjs/vite-plugin](https://crxjs.dev/vite-plugin):** Chrome extension support with Vite.
+- **[@crxjs/vite-plugin](https://github.com/crxjs/chrome-extension-tools):** Chrome extension support with Vite.
 - **[Tailwind CSS](https://tailwindcss.com/):** Utility-first styling.
 
 ## 🚀 Getting Started
